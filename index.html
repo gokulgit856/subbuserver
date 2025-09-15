@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subbu Server</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #ffe6f0; /* soft pastel pink */
+    }
+
+    .iphone {
+      width: 100%;
+      max-width: 400px;
+      min-height: 500px;
+      background: rgba(255, 240, 250, 0.95); /* lighter soft pink */
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4); /* pink shadow */
+      padding: 25px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .text-wrapper {
+      font-size: clamp(20px, 4vw, 26px);
+      font-weight: 700;
+      color: #c71585; /* medium violet red */
+      font-style: italic;
+    }
+
+    .text-wrapper-2 {
+      font-size: clamp(14px, 3vw, 16px);
+      color: #ba55d3; /* medium orchid */
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    .text-wrapper-3 {
+      font-size: clamp(12px, 2.5vw, 14px);
+      color: #d147a3; /* pinkish */
+      margin-top: 4px;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .menu {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rectangle {
+      padding: 14px;
+      border-radius: 12px;
+      background-color: #ffc0cb; /* pastel pink */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: clamp(14px, 3vw, 16px);
+      color: #800080; /* purple */
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(219,112,147, 0.3); /* soft pink shadow */
+    }
+
+    .rectangle:hover {
+      background-color: #d147a3; /* deeper pink */
+      color: #fff;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 14px rgba(209, 48, 115, 0.45);
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .text-wrapper-6 {
+      font-size: clamp(12px, 2.5vw, 13px);
+      color: #b356a1; /* soft purple */
+      font-weight: 500;
+    }
+
+    /* Tablet - show 2 columns */
+    @media (min-width: 600px) {
+      .menu {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Desktop - larger box */
+    @media (min-width: 1024px) {
+      .iphone {
+        max-width: 500px;
+        min-height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone">
+    <div class="header">
+      <div class="text-wrapper">SUBBU SERVER</div>
+      <div class="text-wrapper-2">Hello Guys!</div>
+      <div class="text-wrapper-3">Welcome To My Server 👋</div>
+    </div>
+
+    <div class="menu">
+      <a href="timetable.jpg" download class="rectangle">📘 Time Table</a>
+      <a href="DBMS 1.pdf" download class="rectangle">💾 DBMS</a>
+      <a href="" download class="rectangle">📟 ADLD</a>
+      <a href="AI.pdf" download class="rectangle">🤖 AI</a>
+      <a href="ADLD LAB.pdf" download class="rectangle">📂 ADLD LAB</a>
+      <a href="SQL .pdf" download class="rectangle">📂 SQL LAB</a>
+      <a href="SAC LAB.docx" download class="rectangle">📂 SAC LAB</a>
+      <!-- New folders -->
+      <a href="matrix_folder.zip" download class="rectangle">📁 Matrix</a>
+      <a href="r_program.zip" download class="rectangle">📁 R Program</a>
+    </div>
+
+    <div class="footer">
+      <div class="text-wrapper-6"></div>
+    </div>
+  </div>
+</body>
+</html>
