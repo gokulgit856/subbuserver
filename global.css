@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Subbu Server - AI Interface</title>
+    <style>
+      /* Reset and base */
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #ffe6f0; /* soft pastel pink background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      main.iphone {
+        background: rgba(255, 240, 250, 0.95); /* light pastel pink */
+        border-radius: 25px;
+        box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4); /* pink shadow */
+        padding: 30px 25px;
+        width: 100%;
+        max-width: 400px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      section.div header {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      h1.text-wrapper {
+        font-size: clamp(24px, 6vw, 28px);
+        color: #c71585; /* medium violet red */
+        font-style: italic;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      h2.text-wrapper-2 {
+        font-size: clamp(16px, 4vw, 18px);
+        color: #ba55d3; /* medium orchid */
+        margin-top: 6px;
+        font-weight: 600;
+      }
+
+      nav.overlap-group,
+      nav.overlap {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      button.rectangle,
+      button.rectangle-2,
+      button.rectangle-3 {
+        background-color: #ffc0cb; /* pastel pink */
+        border: none;
+        border-radius: 12px;
+        padding: 14px 28px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(219, 112, 147, 0.3);
+        font-weight: 600;
+        font-size: clamp(14px, 3vw, 16px);
+        color: #800080; /* purple */
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+      }
+
+      button.rectangle-2 {
+        background-color: #ffb6c1; /* lighter pink */
+        color: #6a006a;
+      }
+
+      button.rectangle-3 {
+        background-color: #ff99cc; /* brighter pink */
+        color: #590059;
+      }
+
+      button.rectangle:hover,
+      button.rectangle-2:hover,
+      button.rectangle-3:hover {
+        background-color: #d147a3; /* deeper pink */
+        color: #fff;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 14px rgba(209, 48, 115, 0.45);
+      }
+
+      button.rectangle span.text-wrapper-3,
+      button.rectangle-2 span.text-wrapper-4,
+      button.rectangle-3 span.text-wrapper-5 {
+        font-weight: 600;
+      }
+
+      section.div-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      button.ai-button {
+        background-color: #ffc0cb; /* pastel pink */
+        border: none;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #800080;
+        cursor: pointer;
+        box-shadow: 0 6px 15px rgba(219, 112, 147, 0.4);
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+      }
+
+      button.ai-button:hover {
+        background-color: #d147a3;
+        color: #fff;
+        transform: translateY(-4px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(209, 48, 115, 0.6);
+      }
+
+      span.text-wrapper-6 {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="iphone">
+      <section class="div">
+        <header>
+          <h1 class="text-wrapper">SUBBU SERVER</h1>
+          <h2 class="text-wrapper-2">Hello Welcome</h2>
+        </header>
+        <nav class="overlap-group" role="navigation" aria-label="AI options row 1">
+          <button class="rectangle" aria-label="AI option 1">
+            <span class="text-wrapper-3">AI</span>
+          </button>
+          <button class="rectangle-2" aria-label="AI option 2">
+            <span class="text-wrapper-4">AI</span>
+          </button>
+        </nav>
+        <nav class="overlap" role="navigation" aria-label="AI options row 2">
+          <button class="rectangle" aria-label="AI option 3">
+            <span class="text-wrapper-3">AI</span>
+          </button>
+          <button class="rectangle-3" aria-label="AI option 4">
+            <span class="text-wrapper-5">AI</span>
+          </button>
+        </nav>
+        <section class="div-wrapper">
+          <button class="ai-button" aria-label="Main AI option">
+            <span class="text-wrapper-6">AI</span>
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
